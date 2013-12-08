@@ -16,6 +16,9 @@ public class Collectivizer extends ClassVisitor {
             return null;
         }
 
-        return super.visitField(Opcodes.ACC_PUBLIC, name, desc, signature, value);
+        access &= ~(Opcodes.ACC_PRIVATE | Opcodes.ACC_PROTECTED);
+        access |= Opcodes.ACC_PUBLIC;
+
+        return super.visitField(access, name, desc, signature, value);
     }
 }
