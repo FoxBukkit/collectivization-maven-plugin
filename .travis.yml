@@ -1,0 +1,9 @@
+language: java
+before_install: wget https://gist.githubusercontent.com/Doridian/01cb63301fe4d022f533bd221e227970/raw/0771d2c50808b295abfbabe266be7368c3273974/settings.xml
+  -O settings.bin
+script: mvn deploy -DaltDeploymentRepository=deployment-repo-id::default::https://maven.doridian.net/repository/maven-snapshots/
+  --settings settings.bin
+env:
+  global:
+  - secure: Tr77mMSgZzVRVmiQ0ThTjlRFFR3F38XI7dOyalwWp8bfhqbpBb6W6+UXICym3V4l7Oe+6euD3tloQpdMmsx/TqbcX6yOMwujqc1z+432u8/31boi7Ud6VAq1oXm9CbuZwJauzdj/q9ES9NJ+yeDzVk6SvBVNkN2gKgIAN0Xv8qU=
+  - secure: EXDlV9LV40uykChquRPVVbOzbBnY3nzLJSDrPEjef8UkjoXOilPpVGusgHcdo52Ur+zWKzPXdoyNWqqH1t177Ec0eeq5zvw7DjtjRP/1d0UTOusIUN3IkSeT+R3+f9gir8N5qX9oHWld9Bfvy5kzj/RvpjcRjICbVv358+dy/G8=
