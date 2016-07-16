@@ -70,6 +70,12 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
+    <distributionManagement>
+        <repository>
+            <id>foxelbox-repo</id>
+            <url>https://maven.pkg.github.com/foxelbox/packages</url>
+        </repository>
+    </distributionManagement>
 	<prerequisites>
 		<maven>2.0</maven>
 	</prerequisites>
