@@ -29,6 +29,10 @@
 		</dependency>
 	</dependencies>
 	<repositories>
+	        <repository>
+	            <id>foxbukkit-repo</id>
+	            <url>https://maven.pkg.github.com/foxbukkit/packages</url>
+	        </repository>
 		<repository>
 			<id>codehaus.snapshots</id>
 			<url>http://snapshots.maven.codehaus.org/maven2/</url>
@@ -47,6 +51,12 @@
 			</releases>
 		</repository>
 	</repositories>
+    <distributionManagement>
+        <repository>
+            <id>foxbukkit-repo</id>
+            <url>https://maven.pkg.github.com/foxbukkit/packages</url>
+        </repository>
+    </distributionManagement>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>codehaus.snapshots</id>
@@ -70,12 +80,6 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
-    <distributionManagement>
-        <repository>
-            <id>foxelbox-repo</id>
-            <url>https://maven.pkg.github.com/foxelbox/packages</url>
-        </repository>
-    </distributionManagement>
 	<prerequisites>
 		<maven>2.0</maven>
 	</prerequisites>
