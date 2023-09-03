@@ -37,7 +37,7 @@ public class PostCompilerMojo extends AbstractMojo {
     /**
      * The root directory with classes to transform.
      *
-     * @parameter expression="${project.build.outputDirectory}"
+     * @parameter property="project.build.outputDirectory"
      * @required
      * @readonly
      */
